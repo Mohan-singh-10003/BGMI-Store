@@ -1,0 +1,51 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BGMI UC Store</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <nav>
+    <h1>BGMI UC Store</h1>
+    <ul>
+      <li><a href="#uc">Buy UC</a></li>
+      <li><a href="#redeem">Redeem Codes</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>🔥 Buy UC & Redeem Codes Instantly</h2>
+    <p>Fast delivery via Firebase system</p>
+  </section>
+
+  <section id="uc" class="card-section">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="UC">
+      <h3>60 UC - ₹75</h3>
+      <button onclick="payNow('60UC', 75)">Buy Now</button>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="UC">
+      <h3>300 UC - ₹380</h3>
+      <button onclick="payNow('300UC', 380)">Buy Now</button>
+    </div>
+  </section>
+
+  <section id="redeem" class="card-section">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732229.png" alt="Code">
+      <h3>Google Play ₹100 - ₹110</h3>
+      <button onclick="payNow('Google100', 110)">Buy Now</button>
+    </div>
+  </section>
+
+  <footer>© 2025 BGMI Store</footer>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
